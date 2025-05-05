@@ -104,8 +104,8 @@ def train_model(model,train_loader,num_epochs):
       optimizer.step()
       running_loss+=loss.item()
     print(f"Epoch [{epoch+1}/{num_epochs}], Loss: {running_loss/len(train_loader):.4f}")
-print("Name: Vikaash K S")
-print("Reg.no: 212223240179")
+print("Name: Elamaran S E")
+print("Reg.no: 212222230036")
 
 train_model(model,train_loader,num_epochs=10)
 
@@ -166,6 +166,7 @@ def predict_image(model,image_index,dataset):
   plt.show()
   print(f"Actual: {class_names[label]}\nPredicted: {class_names[predicted.item()]}")
 predict_image(model,image_index=80,dataset=test_dataset)
+
 
 ```
 ### OUTPUT
